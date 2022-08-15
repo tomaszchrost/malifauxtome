@@ -1,0 +1,9 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+{% for action in malifauxmodel.abilities.all %}
+    {% include "action.html" %}
+{% endfor %}
+</table>

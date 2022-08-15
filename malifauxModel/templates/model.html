@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="model_name_outer_div">
+    <div class="model_name_inner_div">
+        <h1 class="model_title model_name">{{ malifauxmodel.name }}</h1>
+    </div>
+</div>
+<h3 class="model_title model_characteristic"><i>{{ malifauxmodel.characteristic_string }}</i></h3>
+<h3 class="model_title model_keyword">{{  malifauxmodel.keyword_string }}</h3>
+{% include "stat_card.html" %}
+{% include "actions.html" %}
